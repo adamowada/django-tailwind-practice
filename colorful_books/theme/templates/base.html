@@ -1,0 +1,22 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Colorful Books</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+	</head>
+
+	<body class="bg-stone-300 font-serif leading-normal tracking-normal">
+		<div class="container mx-auto max-w-screen-md">
+			<section class="flex items-start justify-center max-h-screen bg-blue-300 text-gray-500 font-sans rounded-full hover:bg-blue-500 hover:text-gray-200 shadow-xl shadow-blue-500/40 mt-5">
+				<h1 class="text-5xl py-4 px-4">Django Tailwind Library</h1>
+			</section>
+		</div>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+	</body>
+</html>
